@@ -63,5 +63,12 @@ public class TextProcessorUI extends JFrame {
         return sb.toString();
     }
 
-
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new TextProcessorUI().setVisible(true);
+            }
+        });
+    }
 }
